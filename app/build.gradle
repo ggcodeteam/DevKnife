@@ -1,0 +1,24 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion rootProject.ext.compileSdkVersion
+
+    defaultConfig {
+        applicationId "com.passin.devknife"
+        minSdkVersion rootProject.ext.minSdkVersion
+        targetSdkVersion rootProject.ext.targetSdkVersion
+        versionCode rootProject.ext.versionCode
+        versionName rootProject.ext.versionName
+    }
+}
+
+dependencies {
+    debugImplementation project(':devknife')
+    releaseImplementation project(':devknife-no-op')
+    implementation rootProject.ext.appCompat
+    implementation rootProject.ext.recyclerview
+    implementation rootProject.ext.gson
+    implementation rootProject.ext.okhttp
+    implementation rootProject.ext.constraintlayout
+
+}

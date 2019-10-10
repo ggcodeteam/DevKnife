@@ -1,0 +1,21 @@
+apply plugin: 'com.android.library'
+apply plugin: 'maven'
+
+android {
+    compileSdkVersion rootProject.ext.compileSdkVersion
+
+    defaultConfig {
+        minSdkVersion rootProject.ext.minSdkVersion
+    }
+}
+
+dependencies {
+    compileOnly rootProject.ext.okhttp
+    compileOnly rootProject.ext.appCompat
+    compileOnly rootProject.ext.supportAnnotations
+    compileOnly rootProject.ext.recyclerview
+    compileOnly rootProject.ext.constraintlayout
+    compileOnly rootProject.ext.gson
+    implementation rootProject.ext.cardview
+    implementation rootProject.ext.loadknife
+}
