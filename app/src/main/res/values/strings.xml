@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">DevKnife</string>
+    <string name="network_switch">网络切换</string>
+    <string name="convenient_login">便捷登录</string>
+    <string name="test">测试测试</string>
+</resources>

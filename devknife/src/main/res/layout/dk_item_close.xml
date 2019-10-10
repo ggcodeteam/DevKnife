@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/DK.CardView"
+    android:layout_marginTop="8dp"
+    android:layout_marginStart="15dp"
+    android:layout_marginEnd="15dp"
+    android:foreground="?attr/selectableItemBackground">
+
+    <TextView
+        android:gravity="center"
+        android:id="@+id/tv_exit"
+        style="@style/DK.Text"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="@string/dk_category_exit"
+        android:textColor="@color/dk_color_CC3A4B"/>
+
+</android.support.v7.widget.CardView>

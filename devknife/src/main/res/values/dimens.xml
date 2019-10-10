@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--一般情况下应用 UI 使用的 margin 值-->
+    <dimen name="dk_margin">16dp</dimen>
+    <dimen name="dk_margin_half">8dp</dimen>
+
+</resources>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingStart="@dimen/dk_margin"
+    android:paddingRight="@dimen/dk_margin"
+    android:paddingTop="5dp"
+    android:paddingBottom="5dp"
+    android:gravity="center_vertical">
+
+    <TextView
+        android:id="@+id/tv_name"
+        style="@style/DK.Text.Black"
+        android:layout_width="130dp"
+        android:textIsSelectable="true"
+        tools:text="标签标签标签标签标签标签"/>
+
+    <TextView
+        android:id="@+id/tv_value"
+        style="@style/DK.Text.Black"
+        android:layout_marginStart="10dp"
+        android:textIsSelectable="true"
+        tools:text="内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容"/>
+
+</LinearLayout>

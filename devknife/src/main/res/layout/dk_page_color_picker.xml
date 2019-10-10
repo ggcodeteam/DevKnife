@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+    <com.ggcode.devknife.knife.ui.colorpicker.ColorPickerView
+        android:id="@+id/color_picker_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        />
+
+    <FrameLayout
+        android:id="@+id/fl_function"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:padding="16dp"
+        android:gravity="center_vertical">
+
+        <ImageView
+            android:id="@+id/iv_close"
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:layout_gravity="center_horizontal"
+            android:src="@drawable/dk_close_big_btn"
+            />
+
+        <ImageView
+            android:id="@+id/iv_shift_switch"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_gravity="start"
+            android:src="@drawable/dk_color_picker_pixel_shift_switch"
+            />
+
+        <android.support.constraint.ConstraintLayout
+            android:id="@+id/cl_shift"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="38dp"
+            android:layout_gravity="center_horizontal"
+            android:visibility="gone"
+            app:layout_constraintTop_toBottomOf="@id/iv_close"
+            tools:visibility="visible">
+
+            <ImageView
+                android:id="@+id/iv_up_shift"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/dk_color_picker_pixel_up_shift"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                />
+
+            <ImageView
+                android:id="@+id/iv_down_shift"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:src="@drawable/dk_color_picker_pixel_down_shift"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/iv_up_shift"/>
+
+            <ImageView
+                android:id="@+id/iv_left_shift"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="10dp"
+                android:src="@drawable/dk_color_picker_pixel_left_shift"
+                app:layout_constraintRight_toLeftOf="@id/iv_down_shift"
+                app:layout_constraintTop_toTopOf="@id/iv_down_shift"/>
+
+            <ImageView
+                android:id="@+id/iv_right_shift"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:src="@drawable/dk_color_picker_pixel_right_shift"
+                app:layout_constraintLeft_toRightOf="@id/iv_down_shift"
+                app:layout_constraintTop_toTopOf="@id/iv_down_shift"/>
+        </android.support.constraint.ConstraintLayout>
+
+    </FrameLayout>
+
+</LinearLayout>
+

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="DKTitleBar">
+        <attr name="titleText" format="string"/>
+        <attr name="titleTextColor" format="color"/>
+        <attr name="titleBackground" format="color"/>
+
+        <attr name="backSrc" format="reference"/>
+        <attr name="backImgVisible" format="boolean"/>
+
+        <attr name="menuText" format="string"/>
+        <attr name="menuTextColor" format="color"/>
+        <attr name="menuSrc" format="reference"/>
+
+        <attr name="menu1Text" format="string"/>
+        <attr name="menu1TextColor" format="color"/>
+        <attr name="menu1Src" format="reference"/>
+    </declare-styleable>
+
+</resources>

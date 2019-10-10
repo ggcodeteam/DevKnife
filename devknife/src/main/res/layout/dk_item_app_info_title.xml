@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/DK.Layout"
+    android:gravity="center_vertical"
+    android:orientation="vertical">
+
+    <View style="@style/DK.Line"/>
+
+    <TextView
+        android:textStyle="bold"
+        android:id="@+id/tv_title"
+        style="@style/DK.Text.Gray"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:paddingStart="@dimen/dk_margin"
+        android:paddingEnd="@dimen/dk_margin"
+        android:textSize="@dimen/dk_text_size_18"
+        tools:text="标题"/>
+
+</LinearLayout>

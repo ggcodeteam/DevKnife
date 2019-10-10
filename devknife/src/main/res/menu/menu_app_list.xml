@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tool="http://schemas.android.com/tools"
+    tool:context="com.ggcode.devknife.knife.tools.appinfo.list.AppListActivity">
+
+    <item
+        android:id="@+id/menu_app_list_show_strategy"
+        android:icon="@drawable/dk_app_info_menu_app_list_linear"
+        android:title=""
+        app:showAsAction="always"/>
+
+    <group
+        android:checkableBehavior="all">
+        <item
+            android:id="@+id/menu_is_show_system_app"
+            android:checked="true"
+            android:title="@string/dk_app_info_show_system_app"
+            app:showAsAction="never"
+            />
+    </group>
+
+</menu>
